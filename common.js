@@ -30,6 +30,7 @@ export var f = {
 			.typeText("#login_email", username)
 			.typeText("#login_password", password)
 			.click(".btn-login")
+			.expect(Selector("#body_div").exists).ok()
 		await this.hide_status_bar()
 	},
 
